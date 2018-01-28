@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Personal Website for Malcolm LeClair">
+    <meta name="author" content="Malcolm LeClair">
+
+    <title>Malcolm LeClair</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="static/css/grayscale.css" rel="stylesheet">
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Malcolm LeClair This could be a logo?</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h6 class="brand-heading">Hi, I'm Malcolm</h6>
+              <p class="intro-text">
+                Maker &mdash; Developer &mdash; Student</p>
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h3>About Me</h3>
+            <p>
+               I'm a Computer Engineering Major at Northeastern University.
+               I'm probably working on my 3D printer, tinkering with an arduino, or building a new web  site
+            </p>
+          </div>
+          <div class="experience col-lg-4 left-align">
+            <h3>Experience:</h3>
+            <h6>Numeric Investors</h6>           
+            <p class="position-title">Software Engineering Coop</p>
+              <p>Developed testing infrastructure and developed for legacy web app<br>
+                Migrated apps to Docker and established development tooling with DevOps engineer</p>
+            <h6>Qinetiq North America</h6>           
+            <p class="position-title">Mechanical Coop</p>
+              <p>Designed components for robot controller and enclosures for breakout boards</p>
+            <a href="#experience"><h6>More</h6></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section content-section text-center">
+      <div class="container">
+        <div class="col-lg-8 mx-auto">
+          <h1>Check out some of the projects <br>I'm working on!</h1>
+          <a href="{{url_for("portfolio")}}" class="btn btn-default btn-lg">View My Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section content-section">
+      <div class="container">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2>Experience</h2>
+        </div>
+        <div class="row align-middle">
+          <div class="col-lg-4">
+            <a href="https://www.numeric.com/">
+              <img src="/static/img/man-numeric-logo.png" alt="Man Numeric">
+            </a>
+          </div>
+          <div class="col-lg-8 align-left">
+            <h5>Software Engineering Coop</h5>
+            <ul>
+              <li>Designed new pages for internal web-app according to cleint specifications; 
+                sourced and processed data from Mongo and SQL servers</li>
+              <li>Implemented testing framework and wrote tests for Flask web-app using Pytest & Setuptools</li>
+              <li>Created automated email analytics analyzing trade flows</li>
+              <!-- <li>Expanded existing data visualization capabilities of internal web-app, 
+                refactoring code to standardize data API</li> -->
+              <li>Refactored and dockerized legacy web-app with DevOps engineer and built internal development scripts</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" class="align-middle">
+          <div class="col-lg-4 left-align">
+            <a href="https://www.qinetiq-na.com/">
+              <img src="/static/img/qinetiq-na-logo.png" alt="Qinetiq">
+            </a>
+          </div>
+          <div class="col-lg-8 align-left">
+            <h5>Mechanical Engineering Coop</h5>
+            <ul>
+              <li>Designed and prototyped 3D printed and machined parts for a hand-held robotic controller</li>
+              <li>Wrote customer specification reports for next-gen tactical robots based on performance testing</li>
+              <li>Interfaced with manufacturers and vendors to design parts and obtain quotes for project proposals</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" class="align-middle">
+          <div class="col-lg-4 left-align">
+            <a href="http://www.coe.neu.edu/research/hidrovo/">
+              <img src="/static/img/mtfl-logo-inv.png" alt="MultiScale Thermal Fluids Lab">
+            </a>
+          </div>
+          <div class="col-lg-8 align-left">
+            <h5>Undergraduate Researcher</h5>
+                <ul>
+                  <li>Worked on ARPA-E joint grant between Northeastern and MIT's Device Research Lab</li>
+                  <li>Designed experiments and collected data to characterize thermal 
+                    performance of low pressure boiling heat exchangers</li>
+                  <li>Procured, calibrated, maintained, repaired laboratory hardware and instruments</li>
+                  <li>Presented at Northeastern's RISE</li>  
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Contact Me</h2>
+            <p>Feel free to get in touch here, or through one 
+              of my other social media accounts</p>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://linkedin.com/in/malcolm-leclair
+                " class="btn btn-default btn-lg">
+                  <i class="fa fa-linkedin-square fa-fw "></i>
+                  <span>Linked-In</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/mleclair73" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span>Github</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <form id="contactForm" name="sentMessage" novalidate>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input class="form-control" id="name" type="text" placeholder="Your Name" required data-validation-required-message="Please enter your name.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" id="email" type="email" placeholder="Your Email" required data-validation-required-message="Please enter your email address.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" id="phone" type="tel" placeholder="Your Phone">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group form-message">
+                      <textarea class="form-control" id="message" placeholder="Your Message" required data-validation-required-message="Please enter a message."></textarea>
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-lg-12 text-center submit">
+                    <div id="success"></div>
+                    <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    {% include "footer.html"%}
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="static/js/grayscale.js"></script>
+    
+    <!-- Contact form JavaScript -->
+    <script src="static/js/jqBootstrapValidation.js"></script>
+    <script src="static/js/contact_me.js"></script>
+
+  </body>
+</html>

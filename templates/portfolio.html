@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Malcolm LeClair">
+
+    <title>Malcolm LeClair</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="static/css/grayscale.css" rel="stylesheet">
+  </head>
+
+  <body id="page-top">
+    
+    <!-- Navigation Bar -->
+    {% include "nav_bar.html" without context %}
+
+    <!-- Header Section -->
+    <section id="portfolio-header" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <a href="{{url_for("download_portfolio")}}"><h3>View Portfolio</h3></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Project Grid -->
+    <!-- Portfolio Grid -->
+    <section id="project">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">Projects</h2>
+              <h3 class="section-subheading">More info and updates coming soon</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 project-item">
+              <a class="project-link" data-toggle="modal" href="#projectModal1">
+                <div class="project-hover">
+                  <div class="project-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="static/img/project/01-thumbnail.jpg" alt="">
+              </a>
+              <div class="project-caption">
+                <h4>3D Printer</h4>
+                <!-- <p class="text-muted"></p> -->
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 project-item">
+              <a class="project-link" data-toggle="modal" href="#projectModal2">
+                <div class="project-hover">
+                  <div class="project-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="static/img/project/02-thumbnail.jpg" alt="">
+              </a>
+              <div class="project-caption">
+                <h4>Genetic Algorithms</h4>
+                <!-- <p class="text-muted">Genetic Algorithms</p> -->
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 project-item">
+              <a class="project-link" data-toggle="modal" href="#projectModal3">
+                <!-- <div class="project-hover">
+                  <div class="project-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div> -->
+                <img class="img-fluid" src="static/img/project/03-thumbnail.jpg" alt="">
+              </a>
+              <div class="project-caption">
+                <h4>Low Pressure Evaporators</h4>
+                <!-- <p class="text-muted">Low Pressure Evaporators</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  {% include "footer.html"%}
+  </body>
+</html>
+  
