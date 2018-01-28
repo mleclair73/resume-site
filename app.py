@@ -3,7 +3,14 @@ from flask import Flask, render_template, jsonify, request, send_from_directory
 from flask_mail import Mail, Message
 
 app = Flask(__name__)
-app.config.from_pyfile('settings.cfg')
+is_prod = os.environ.get('IS_HEROKU', None)
+
+if os.path.isfile('settings.cfg'):
+    app.config.from_pyfile('settings.cfg')
+else:
+    values = ['MAIL_USERNAME','MAIL_PASSWORD', 'MAIL_PORT', 'MAIL_SERVER', 'MAIL_USE_SSL'] 
+    for val in values:
+        app.config[val] = os.environ[val]
 mail = Mail(app)
 
 @app.route('/')
