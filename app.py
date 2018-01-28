@@ -11,6 +11,9 @@ else:
     values = ['MAIL_USERNAME','MAIL_PASSWORD', 'MAIL_PORT', 'MAIL_SERVER', 'MAIL_USE_SSL'] 
     for val in values:
         app.config[val] = os.environ[val]
+if 'DYNO' in os.environ:
+    app.logger.addHandler(logging.StreamHandler(sys.stdout))
+    app.logger.setLevel(logging.ERROR)
 mail = Mail(app)
 
 @app.route('/')
