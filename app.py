@@ -4,7 +4,7 @@ from flask import Flask, render_template, jsonify, request, send_from_directory
 from flask_mail import Mail, Message
 
 app = Flask(__name__)
-is_prod = os.environ.get('IS_HEROKU', None)
+# is_prod = os.environ.get('IS_HEROKU', None)
 
 if os.path.isfile('settings.cfg'):
     app.config.from_pyfile('settings.cfg')

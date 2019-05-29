@@ -62,6 +62,9 @@
     section#experience h5 {
       margin-bottom: 2px;
     }
+    .position-title {
+      font-style: italic;
+    }
     
   #mainNav {
     font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;

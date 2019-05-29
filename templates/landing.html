@@ -76,20 +76,24 @@
           <div class="col-lg-8">
             <h3>About Me</h3>
             <p>
-               I'm a Computer Engineering Major at Northeastern University.
-               I'm probably working on my 3D printer, tinkering with an arduino, or building a new web  site
+               I'm a recent graduate of Northeastern University's Computer Engineering program.
+               I'm probably working on my 3D printer, tinkering with an arduino, or in the woods
             </p>
           </div>
           <div class="experience col-lg-4 left-align">
             <h3>Experience:</h3>
+            <h6>Piaggio Fast Forward</h6>           
+            <p class="position-title">Software Development Coop</p>
+              <p>Wrote C++ wrapper library for embedded linux bluetooth and application layer logic>br>
+                 Developed ROS node to interface with internal web APIs</p>
             <h6>Numeric Investors</h6>           
-            <p class="position-title">Software Engineering Coop</p>
-              <p>Developed testing infrastructure and developed for legacy web app<br>
-                Migrated apps to Docker and established development tooling with DevOps engineer</p>
-            <h6>Qinetiq North America</h6>           
+            <p class="position-title">Software Development Coop</p>
+              <p>Developed testing infrastructure and new features for web applications<br>
+                 Migrated apps to Docker and established development tooling with DevOps engineer</p>
+            <!-- <h6>Qinetiq North America</h6>           
             <p class="position-title">Mechanical Coop</p>
               <p>Designed components for robot controller and enclosures for breakout boards</p>
-            <a href="#experience"><h6>More</h6></a>
+            <a href="#experience"><h6>More</h6></a> -->
           </div>
         </div>
       </div>
@@ -113,10 +117,30 @@
         </div>
         <div class="row align-middle">
           <div class="col-lg-4">
+            <a href="https://www.piaggiofastforward.com/">
+              <img src="/static/img/pff-logo.png" alt="Piaggio Fast Forward">
+            </a>
+          </div>
+          
+          <div class="col-lg-8 align-left">
+            <h5>Software Development Coop</h5>
+            <ul>
+              <li>Created custom C++ Bluetooth library for embedded Linux using D-Bus and HCI functionality</li>
+              <li>Wrote ROS node using Bluetooth library to control and monitor personal cargo robot</li>
+              <li>Wrote C firmware for I2C LED driver</li>
+              <li>Developed ROS node to interface with internal web APIs</li>
+              <li>Prototyped Bluetooth features for client demonstrations</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="row align-middle">
+          <div class="col-lg-4">
             <a href="https://www.numeric.com/">
               <img src="/static/img/man-numeric-logo.png" alt="Man Numeric">
             </a>
           </div>
+
           <div class="col-lg-8 align-left">
             <h5>Software Engineering Coop</h5>
             <ul>
@@ -124,8 +148,8 @@
                 sourced and processed data from Mongo and SQL servers</li>
               <li>Implemented testing framework and wrote tests for Flask web-app using Pytest & Setuptools</li>
               <li>Created automated email analytics analyzing trade flows</li>
-              <!-- <li>Expanded existing data visualization capabilities of internal web-app, 
-                refactoring code to standardize data API</li> -->
+              <li>Expanded existing data visualization capabilities of internal web-app, 
+                refactoring code to standardize data API</li>
               <li>Refactored and dockerized legacy web-app with DevOps engineer and built internal development scripts</li>
             </ul>
           </div>
